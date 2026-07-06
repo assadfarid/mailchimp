@@ -1,0 +1,677 @@
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml"
+  xmlns:o="urn:schemas-microsoft-com:office:office">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <title>GardenMark Canada — Gazon Synthétique</title>
+
+  <style>
+    /* ===========================
+   RESET
+=========================== */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    body,
+    table,
+    td,
+    a {
+      -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+    }
+
+    table {
+      width: 100%;
+      border: 0;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p {
+      margin: 0;
+    }
+
+    /* ===========================
+   TYPOGRAPHY
+=========================== */
+    p {
+      font: 500 12px/1.25 "Roboto", Arial, Helvetica, sans-serif;
+      letter-spacing: -0.5px;
+    }
+
+    h1,
+    h3,
+    h4,
+    h6 {
+      font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-size: 46px;
+      line-height: .9;
+      letter-spacing: -2px;
+      padding: 10px 0;
+    }
+
+    h3 {
+      font-size: 18px;
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+
+    h4 {
+      font-size: 16px;
+      line-height: 1.1;
+      margin-bottom: 10px;
+    }
+
+    h6 {
+      font-size: 14px;
+      line-height: 1;
+    }
+
+    /* ===========================
+   LAYOUT
+=========================== */
+    .email-wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .email-container {
+      width: 100%;
+      max-width: 600px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: block;
+      padding: 10px;
+    }
+
+    /* ===========================
+   HERO
+=========================== */
+    .hero-section {
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: 20px;
+      background: url("https://res.cloudinary.com/dtzj6odwu/image/upload/v1783280732/designer_hero_zvljuk.jpg") center/cover no-repeat;
+    }
+
+    .hero-section .logo img {
+      width: auto;
+    }
+
+    .hero-caption {
+      position: relative;
+      width: 60%;
+    }
+
+    .hero-caption hr {
+      width: 30%;
+      margin-left: 0;
+      border: 2px solid #388912;
+    }
+
+    .logo td {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .hero-section td.badges table td {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+    }
+
+    .hero-section td.badges td img {
+      width: 100px;
+      height: auto;
+    }
+
+    /* ===========================
+   SERVICES
+=========================== */
+
+    .feature-list,
+    .accessories,
+    .footer,
+    .footer-contact,
+    .icon-title {
+      display: flex;
+    }
+
+    .service-list.accessories .service-box {
+      border: 1px solid #d3d3d3;
+    }
+
+    .service-list.accessories .service-box img {
+      height: 90px !important;
+    }
+
+    /* Shared gap systems */
+    .feature-list,
+    .accessories {
+      gap: 10px;
+    }
+
+    .accessories .icon-title {
+      justify-content: center;
+    }
+
+    /* ===========================
+   FEATURE LIST
+=========================== */
+    .feature-list {
+      padding: 10px 0;
+    }
+
+    /* ===========================
+   FOOTER
+=========================== */
+    .footer {
+      gap: 20px;
+      background: #0b2300;
+    }
+
+    .footer p {
+        color: #ffffff;
+    }
+
+    .footer-contact {
+      justify-content: space-between;
+      background: #183c08;
+    }
+
+
+
+    /* ===========================
+   SERVICES SECTION
+=========================== */
+
+    .service-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      align-items: stretch;
+    }
+
+    .service-box {
+      flex: 1 1 0;
+      min-width: 0;
+      display: flex;
+      flex-direction: column;
+      box-sizing: border-box;
+    }
+
+    .service-box img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      margin-bottom: 10px;
+    }
+
+    .service-box a {
+      display: contents;
+    }
+
+    .service-box p {
+      text-align: center;
+      margin-top: 5px;
+    }
+
+    /* ===========================
+   ICONS
+=========================== */
+
+    .icon-title h6 {
+      color: #068506;
+      text-align: center;
+    }
+
+    .icon-title a {
+      color: #111111;
+    }
+
+    /* ===========================
+   WHY US
+=========================== */
+
+    .why-us {
+      display: flex;
+      background: #183c08;
+      gap: 0;
+    }
+
+    .why-us-img {
+        display: flex;
+        flex: 0 0 60%;
+        box-sizing: border-box;
+        background: url(https://res.cloudinary.com/dtzj6odwu/image/upload/v1783340530/why-us_nqnxyp.png) right / cover no-repeat;
+        min-height: 150px;
+        justify-content: flex-end;
+        align-items: end;
+    }
+
+    .why-us-img img {
+        width: 64px;
+        height: 90px;
+        border-radius: 5px;
+    }
+
+    .why-us-content {
+      flex: 0 0 40%;
+      box-sizing: border-box;
+      min-width: 0;
+      padding-right: 10px;
+    }
+
+    .why-us .icon-title {
+      justify-content: center;
+    }
+
+    .why-us .check-list {
+      flex: 0 0 32%;
+      box-sizing: border-box;
+    }
+
+    .check-list {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .check-list li {
+      position: relative;
+      margin-bottom: 5px;
+      padding-left: 20px;
+      font: 12px/1.5 "Roboto", Arial, Helvetica, sans-serif;
+    }
+
+    .check-list li::before {
+      content: "";
+      position: absolute;
+      top: 0px;
+      left: 0;
+      width: 16px;
+      height: 16px;
+      background: url("https://res.cloudinary.com/dtzj6odwu/image/upload/v1782506333/Icon_Design_2_fbcp4w.svg") center/contain no-repeat;
+    }
+
+    .why-us-content h3 {
+        color: #ffffff;
+    }
+
+    .footer .footer-content.contact p a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+    overflow: hidden;
+    }
+
+    .footer .footer-content.contact p a::before {
+      content: "";
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 18px;
+  }
+
+  .footer .footer-content.contact p a.call::before {
+    background-image: url(https://res.cloudinary.com/dtzj6odwu/image/upload/v1783321898/call_jupviz.svg);
+  }
+
+  .footer .contact p a.email::before {
+    background-image: url(https://res.cloudinary.com/dtzj6odwu/image/upload/v1783321898/email_ahq0cw.svg);
+  }
+
+  .footer .contact p a.web::before {
+    background-image: url(https://res.cloudinary.com/dtzj6odwu/image/upload/v1783321898/web_wdpcdq.svg);
+  }
+
+    /* ===========================
+   WHY US
+=========================== */
+
+    .footer-contact p,
+    .footer-contact a,
+    .check-list li {
+      color: #fff;
+    }
+
+    .footer-img img {
+      height: 110px;
+    }
+
+    @media (max-width: 600px) {
+      .service-box {
+        flex: 0 0 calc(32% - 5px);
+      }
+
+      .service-box p {
+        height: auto;
+      }
+
+      .why-us td {
+        gap: 15px 0;
+        align-items: flex-end;
+      }
+
+      .why-us .title {
+        flex: 0 0 100%;
+      }
+
+      .why-us .check-list {
+        flex: 0 0 50%;
+      }
+
+      .why-us h3 {
+        margin-bottom: 0;
+      }
+      .why-us-img {
+          flex: 0 0 40%;
+      }
+      .why-us-content {
+        flex: 0 0 60%;
+      }
+      .why-us h3 {
+          margin-bottom: 10px;
+      }
+      .footer {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .footer .footer-content {
+          flex-basis: 46%;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <table class="email-wrapper" role="presentation" cellpadding="0" cellspacing="0" border="0">
+    <tr>
+      <td align="center">
+
+        <table class="email-container" role="presentation" cellpadding="0" cellspacing="0" border="0">
+
+          <!-- Hero -->
+
+          <tr class="hero-section">
+            <td>
+
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0">
+                <tr>
+                  <td>
+                    <table class="logo" role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td>
+                          <a href="https://www.gardenmarkcanada.ca/" target="_blank" rel="noopener">
+                            <img src="https://res.cloudinary.com/dtzj6odwu/image/upload/v1782487327/logo_zj9ao9.png"
+                              alt="GardenMark Canada Logo" class="logo">
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                    <table class="hero-caption" role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td>
+                          <a href="https://www.gardenmarkcanada.ca/become-a-dealer.html" target="_blank" rel="noopener">
+                            <h1 class="hero-title">Become a<br><span style="color:#388912;">GardenMark Dealer</span>
+                            </h1>
+                          </a>
+
+                          <hr>
+
+                          <h3>Premium Synthetic Grass.<br>Local Inventory.<br>
+                            <a href="mailto:info@gardenmarkcanada.ca">
+                              <span style="color:#388912;">Nationwide Support.</span>
+                            </a>
+                          </h3>
+                          <p>Join Canada’s growing network of GardenMark dealers and gain access to premium synthetic
+                            grass products, local inventory, expert training, marketing resources, and reliable
+                            nationwide distribution. Everything you need to grow your business with confidence.</p>
+
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                  <td class="badges">
+                    <table class="logo" role="presentation" cellpadding="0" cellspacing="0" border="0">
+                      <tr>
+                        <td>
+                          <a href="https://www.gardenmarkcanada.ca/contact-us/warranty.html" target="_blank"
+                            rel="noopener">
+                            <img
+                              src="https://res.cloudinary.com/dtzj6odwu/image/upload/v1783274336/sythetic_grass_u8hwtr.svg"
+                              alt="GardenMark Canada Logo">
+                          </a>
+
+                          <a href="mailto:info@gardenmarkcanada.ca">
+                            <img
+                              src="https://res.cloudinary.com/dtzj6odwu/image/upload/v1783332334/no-infill_hpu1mp.png"
+                              alt="No Infill">
+                          </a>
+                        </td>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- Services -->
+          <tr>
+            <td style="display:block; padding:10px;">
+              <table role="presentation" cellpadding="0" cellspacing="0" border="0" width="100%">
+                <tr>
+                  <td style="width:100%; display:block;">
+                    <div class="service-list">
+                      <div class="service-box">
+                        <img
+                          src="https://res.cloudinary.com/dtzj6odwu/image/upload/v1783334100/NATIONWIDE_DISTRIBUTION_wcah8y.jpg"
+                          alt="Synthetic Grass">
+                        <div class="icon-title">
+                          <h6>NATIONWIDE DISTRIBUTION</h6>
+                        </div>
+                        <p>Coast-to-coast product availability and reliable delivery you can count on.</p>
+                      </div>
+
+                      <div class="service-box">
+                          <img
+                            src="https://res.cloudinary.com/dtzj6odwu/image/upload/v1783334166/LOCAL_INVENTORY_x718ys.jpg"
+                            alt="Putting Greens">
+                          <div class="icon-title putting">
+                            <h6>LOCAL INVENTORY</h6>
+                          </div>
+                          <p>Products in stock and ready when you need them.</p>
+                      </div>
+
+                      <div class="service-box">
+                          <img
+                            src="https://res.cloudinary.com/dtzj6odwu/image/upload/v1783334298/DEALER_TRAINING_lxpaqn.jpg"
+                            alt="Playground Surfacing">
+                          <div class="icon-title surfacing">
+                            <h6>DEALER TRAINING & SUPPORT</h6>
+                          </div>
+                          <p>Expert training and ongoing support for your team and customers.</p>
+                      </div>
+
+                      <div class="service-box">
+                          <img
+                            src="https://res.cloudinary.com/dtzj6odwu/image/upload/v1783334389/FREE_ROLL_RACK_nkhaop.jpg"
+                            alt="Installation Accessories">
+                          <div class="icon-title accessories">
+                            <h6>FREE ROLL RACK</h6>
+                          </div>
+                          <p>Receive a complimentary 7.5-foot roll rack as a stocking dealer.</p>
+                      </div>
+
+                      <div class="service-box">
+                          <img src="https://res.cloudinary.com/dtzj6odwu/image/upload/v1783334540/FREE_DEALER_DISPLAY_lmouxm.jpg" alt="Installation Accessories">
+                          <div class="icon-title">
+                            <h6>FREE DEALER DISPLAY</h6>
+                          </div>
+                          <p>Showcase GardenMark products with a complimentary dealer display.</p>
+                      </div>
+                    </div>
+                    <h4 style="text-align: center; margin: 10px 0px; text-decoration: underline;">Accessories</h4>
+                    <div class="service-list accessories" style="margin-top: 10px;">
+                      <div class="service-box">
+                        <a href="https://www.gardenmarkcanada.ca/accessories.html" target="_blank">
+                        <img src="https://res.cloudinary.com/dtzj6odwu/image/upload/v1783334889/nails_jthe7p.jpg"
+                          alt="Turf Nails">
+                        <div class="icon-title">
+                          <h6>Turf Nails</h6>
+                        </div>
+                        </a>
+                      </div>
+
+                      <div class="service-box">
+                        <a href="https://www.gardenmarkcanada.ca/accessories.html" target="_blank">
+                          <img src="https://res.cloudinary.com/dtzj6odwu/image/upload/v1783334953/Tape_hthwz3.webp"
+                            alt="Seaming Tape">
+                          <div class="icon-title">
+                            <h6>Seaming Tape</h6>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="service-box">
+                        <a href="https://www.gardenmarkcanada.ca/accessories.html" target="_blank">
+                          <img src="https://res.cloudinary.com/dtzj6odwu/image/upload/v1783335357/Adhesive_1_hrp4m3.jpg"
+                            alt="Adhesive">
+                          <div class="icon-title">
+                            <h6>Adhesive</h6>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="service-box">
+                        <a href="https://www.gardenmarkcanada.ca/accessories.html" target="_blank">
+                          <img
+                            src="https://res.cloudinary.com/dtzj6odwu/image/upload/v1783335493/seaming-kit_fkk0uy.jpg"
+                            alt="Seaming Kit">
+                          <div class="icon-title">
+                            <h6>Seaming Kit</h6>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="service-box">
+                        <a href="https://www.gardenmarkcanada.ca/accessories.html" target="_blank">
+                          <img src="https://res.cloudinary.com/dtzj6odwu/image/upload/v1783335605/edge_nraqi9.jpg"
+                            alt="Edge Restraint">
+                          <div class="icon-title">
+                            <h6>Edge Restraint</h6>
+                          </div>
+                        </a>
+                      </div>
+
+                      <div class="service-box">
+                        <a href="https://www.gardenmarkcanada.ca/accessories.html" target="_blank">
+                          <img src="https://res.cloudinary.com/dtzj6odwu/image/upload/v1783335839/sweeper_x94wio.jpg"
+                            alt="Sweeper">
+                          <div class="icon-title accessories">
+                            <h6>Sweeper</h6>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+          </tr>
+
+          <!-- Why Us -->
+          <tr class="why-us container">
+            <td class="why-us-content">
+              <h3>WHY DEALERS CHOOSE GARDENMARK</h3>
+              <div class="check-list">
+                <ul class="check-list">
+                  <li>Premium synthetic grass products</li>
+                  <li>Reliable inventory and fast delivery</li>
+                  <li>Expert training and technical support</li>
+                  <li>Marketing resources to grow your business</li>
+                  <li>20-year limited warranty for lasting confidence</li>
+                </ul>
+              </div>
+              <img src="https://res.cloudinary.com/dtzj6odwu/image/upload/v1783340338/tag_irq56l.svg">
+            </td>
+            <td class="why-us-img"><a href="mailto:info@gardenmarkcanada.ca" class="email"><img src="https://res.cloudinary.com/dtzj6odwu/image/upload/v1783349822/scan_idwed7.png" class="qr-code"></a></td>
+
+          </tr>
+
+          <!-- Footer -->
+          <tr class="footer container">
+            <td class="footer-logo">
+              <img src="https://res.cloudinary.com/dtzj6odwu/image/upload/v1783340814/become-dealer_t5uqdo.svg" alt="GardenMark Canada">
+            </td>
+
+            <td class="footer-content">
+              <p>Let's grow together and build your business with premium products and proven support.</p>
+            </td>
+            <td class="footer-content contact">
+              <p> <a href="tel:+18002636102" class="call">800 263-6102</a> </p>
+              <p> <a href="mailto:info@gardenmarkcanada.ca" class="email">info@gardenmarkcanada.ca</a> </p>
+              <p><a href="https://gardenmarkcanada.ca" target="_blank" rel="noopener" class="web"> gardenmarkcanada.ca </a></p>
+            </td>
+          </tr>
+
+        </table>
+
+      </td>
+    </tr>
+  </table>
+
+</body>
+
+</html>
